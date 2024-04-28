@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #000000;
+}
+
+.cve-details p {
+    margin: 0; 
+}
+h2, h4 {
+    color: #000000;
+    font-size:20px;
+}
+
+h2#cveId {
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.cve-details {
+    margin-bottom: 15px;
+}
+
+#accessVectorLabel, #scoreLabel, #vectorStringLabel, #exploitabilityScoreLabel, #impactScoreLabel {
+    font-weight: bolder;
+}
+#score{
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #ddd;
+    
+}
+
+th {
+    background-color: #4c4545;
+    font-weight:800px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    h2, h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}

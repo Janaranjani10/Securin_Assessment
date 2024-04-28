@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVE Details Page</title>
+    <link rel="stylesheet" href="cvedetailspage.css">
+    <script src="cvedetailspage.js"></script>
+</head>
+<body>
+    <h2 id="cveId"></h2>
+    <h4>Description:</h4><br>
+    <p id="cveDescription"></p>
+    <h4>CVSS V2 Metrics:</h4><br>
+    <p class="cve-details"><span id="accessVectorLabel">Access Vector: </span><span id="accessVector"></span></p>
+    <p class="cve-details"><span id="scoreLabel">Score: </span><span id="score"></span></p>
+    <p class="cve-details"><span id="vectorStringLabel">Vector String: </span><span id="vectorString"></span></p><br>
+    <table border="3" id="cvssMetricsTable">
+        <thead>
+            <tr>
+                <th>Access Vector</th>
+                <th>Access Complexity</th>
+                <th>Authentication</th>
+                <th>Confidentiality Impact</th>
+                <th>Integrity Impact</th>
+                <th>Availability Impact</th>
+            </tr>
+        </thead>
+        <tbody id="cvssMetricsTableBody">
+            <!-- Dynamically values are fetched -->
+        </tbody>
+    </table><br>
+    <h4>Scores:</h4><br>
+    <p class="cve-details"><span id="exploitabilityScoreLabel">Exploitability Score: </span><span id="exploitabilityScore"></span></p>
+    <p class="cve-details"><span id="impactScoreLabel">Impact Score: </span><span id="impactScore"></span></p>
+    <h4>CPE:</h4><br>
+    <table border="3" id="cpeTable">
+        <thead>
+            <tr>
+                <th>Criteria</th>
+                <th>Match Criteria Id</th>
+                <th>Vulnerable</th>
+            </tr>
+        </thead>
+        <tbody id="cpeTableBody">
+            <!-- Dynamically values are fetched -->
+        </tbody>
+    </table>
+</body>
+</html>
